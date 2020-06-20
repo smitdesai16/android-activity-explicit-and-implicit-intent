@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,62 +11,112 @@
         android:id="@+id/btnMainExplicitIntent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         android:text="Explicit Intent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMainImplicitIntent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Implicit Intent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentExtra" />
-
-    <Button
-        android:id="@+id/btnMainImplicitIntentBundle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Implicit Intent Pass Data With Bundle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntent" />
-
-    <Button
-        android:id="@+id/btnMainImplicitIntentExtra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Implicit Intent Pass Data with Put Extra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentBundle" />
 
     <Button
         android:id="@+id/btnMainExplicitIntentBundle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="Explicit Intent Pass Data with Bundle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMainExplicitIntent"
         app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntent" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentSendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Send Email"
+        app:layout_constraintStart_toEndOf="@+id/btnMainImplicitIntentSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentSendText" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentDialANumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Dial A Number"
+        app:layout_constraintStart_toEndOf="@+id/btnMainImplicitIntentMapGeo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentMapLink" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentSendImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Send Image"
+        app:layout_constraintStart_toStartOf="@+id/btnMainImplicitIntentPickImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentPickImage" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentMapGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Map Geo"
+        app:layout_constraintStart_toStartOf="@+id/btnMainImplicitIntentLink"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentLink" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Link"
+        app:layout_constraintStart_toStartOf="@+id/btnMainExplicitIntentExtra"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentExtra" />
 
     <Button
         android:id="@+id/btnMainExplicitIntentExtra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="Explicit Intent Pass Data with Put Extra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMainExplicitIntentBundle"
         app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentBundle" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentMapLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Map Link"
+        app:layout_constraintStart_toEndOf="@+id/btnMainImplicitIntentLink"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentExtra" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Pick Image"
+        app:layout_constraintStart_toStartOf="@+id/btnMainImplicitIntentMapGeo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentMapGeo" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentSendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Implicit Intent Send Text"
+        app:layout_constraintStart_toEndOf="@+id/btnMainImplicitIntentPickImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentDialANumber" />
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMainImplicitIntentSendImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentSendImage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
