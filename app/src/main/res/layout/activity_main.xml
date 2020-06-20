@@ -23,6 +23,49 @@
         android:layout_marginTop="16dp"
         android:text="Implicit Intent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentExtra" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentBundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Implicit Intent Pass Data With Bundle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntent" />
+
+    <Button
+        android:id="@+id/btnMainImplicitIntentExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Implicit Intent Pass Data with Put Extra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainImplicitIntentBundle" />
+
+    <Button
+        android:id="@+id/btnMainExplicitIntentBundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Explicit Intent Pass Data with Bundle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntent" />
+
+    <Button
+        android:id="@+id/btnMainExplicitIntentExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Explicit Intent Pass Data with Put Extra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainExplicitIntentBundle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
